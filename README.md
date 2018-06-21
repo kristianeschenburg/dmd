@@ -1,6 +1,6 @@
 # dmd
 
-Method for computing the simple Dynamic Mode Decomposition of a dynamic system.
+Method for computing the simple Dynamic Mode Decomposition of a dynamical system.
 
 For more details, see:
 
