@@ -22,7 +22,7 @@ parser.add_argument('--output',help='Output DMD mode file.',
 parser.add_argument('--hemi',help='Hemisphere to process.',
                     required=True,type=str,choices=['L','R'])
 
-args = parser.parser_args()
+args = parser.parse_args()
 
 hemi_map = {'L': 'CortexLeft',
             'R': 'CortexRight'}
