@@ -31,6 +31,9 @@ try:
     resting = niio.load(args.restfile)
 except:
     raise('Resting state file does not exist.')
+else:
+    n,p = resting.shape
+    print 'State: {:}, Time: {:}'.format(n,p)
 
 # compute DMD modes
 [modes,power,_] = DMD(resting)
