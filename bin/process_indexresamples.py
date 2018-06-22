@@ -17,7 +17,7 @@ import resampling
 parser = argparse.ArgumentParser()
 parser.add_argument('--surfacefile',help='Input surface file.',
                     required=True,type=str)
-parser.add_argument('--distances',help='Distances to compute resample for.',
+parser.add_argument('-d','--distances',help='Distances to compute resample for.',
                     required=True,type=int,nargs='+')
 parser.add_argument('--samples',help='Number of vertex reasmples to take.',
                     required=True,type=int)
