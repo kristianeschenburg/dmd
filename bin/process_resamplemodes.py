@@ -23,7 +23,7 @@ parser.add_argument('--filteredfile',help='Output file to save filtered modes.',
 args = parser.parse_args()
 
 modes = niio.load(args.modefile)
-samples = niio.load(args.resamplefile)
+samples = niio.load(args.resamplefile).astype(np.int32)
 
 nmodes = modes.shape[1]
 nsamps = samples.shape[1]
