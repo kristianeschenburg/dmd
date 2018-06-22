@@ -34,7 +34,7 @@ correlations = np.zeros((nsamps,nmodes))
 for k in np.arange(nmodes):
     
     # correlate mode with its resampled vectors
-    corr = 1-cdist(modes[:,k].T,modes[:,k][samples].T,metric='correlation')
+    corr = 1-cdist(modes[:,k][:,None].T,modes[:,k][samples].T,metric='correlation')
     correlations[:,k] = corr
     
 # compute mean and standard deviations of the correlations for each mode
