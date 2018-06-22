@@ -40,6 +40,6 @@ else:
 F = FastICA(n_components=args.ncomponents)
 F.fit(resting.T)
 
-components = F.components.tolist()
+components = F.components_.tolist()
 
 niio.save(components,args.output,hemi_map[args.hemi])
