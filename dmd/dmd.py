@@ -35,11 +35,11 @@ def DMD(C,n=[],p=[],h=[]):
     Xp = C[:,1:]
     
     # compute SVD of X
-    [U,S,V] = np.linalg.svd(X,full_matrices=False)
+    [U,S,V] = np.linalg.svd(X,full_matrices=False) 
     
     if (n==[]) & (p!=[]):
         n = np.where((np.cumsum(S)/np.sum(S)) >= p)[0][0]+1
-        print 'Keeping {:} modes to capture {:} of energy.'.format(n,p)
+        print('Keeping {:} modes to capture {:} of energy.'.format(n,p))
         
     if n == []:
         n = X.shape[0]
