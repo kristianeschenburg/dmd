@@ -35,5 +35,5 @@ Indices and tables
 .. [1] Schmid, Peter.  (2010).  Dynamic Mode Decomposition of Numerical and Experimental Data. 
    Journal of Fluid Mechanics.
 
-.. [2] Kunert-Grag, James, Eschenburg, Kristian, Galas, David, Kutz, J. Nathan, Rane, Swati, & Brunton, Bingni.  (2019).
+.. [2] Kunert-Graf, James, Eschenburg, Kristian, Galas, David, Kutz, J. Nathan, Rane, Swati, & Brunton, Bingni.  (2019).
    Extracting Reproducible Time-Resolved Resting State Networks using Dynamic Mode Decomposition. Froniters Comp. Neuro.
