@@ -10,12 +10,15 @@ Welcome to dmd's documentation!
 Introduction
 *************
 
-DMD, or *Dynamic Mode Decomposition*, is a modal decomposition algorithm that
+dmd, or *Dynamic Mode Decomposition* is a modal decomposition algorithm, that
 solves for the linear operator that advances some dynamical system.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   all-about-me
+
 
 
 Indices and tables
