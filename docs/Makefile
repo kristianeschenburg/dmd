@@ -2,9 +2,9 @@
 #
 
 # You can set these variables from the command line.
-SPHINXOPTS    = "-W"  # This flag turns warnings into errors.
+SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = PackagingScientificPython
+SPHINXPROJ    = dmd
 SOURCEDIR     = source
 BUILDDIR      = build
 

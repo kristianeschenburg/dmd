@@ -45,6 +45,7 @@ class DMD(object):
         C = X[:, :-1]
         Cp = X[:, 1:]
 
+        # Compute SVD
         [U, S, V] = np.linalg.svd(C, full_matrices=False)
 
         # If power is defined, but number of modes is not
