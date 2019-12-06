@@ -6,7 +6,7 @@ class DMD(object):
     Class to compute dynamic mode decomposition of dynamical system.
     """
 
-    def __init__(self, n_modes=None, p=None, tr=0.720):
+    def __init__(self, n_modes=None, es=None, tr=0.720):
 
         """
         Initialization method.
@@ -77,14 +77,9 @@ class DMD(object):
         Phi = Cp.dot(Vt.dot(Sinv.dot(v)))
         power = np.real(np.sum(Phi*Phi.conj(), 0))
 
-        # if sampling frequency is not defined
-        # used HCP TR by default
-        if not rT:
-            h = (14.*60+33)/1200
-
         # using h to convert complex eigenvalues into corresponding
         # oscillation frequencies
-        freq = np.angle(w)/(2*np.pi*h)
+        freq = np.angle(w)/(2*np.pi*rT)
 
         self.phi_ = Phi
         self.power_ = power
